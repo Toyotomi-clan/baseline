@@ -12,7 +12,7 @@ import {
 } from '@mantine/core';
 import { useBooleanToggle } from '@mantine/hooks';
 import { ChevronDown } from 'tabler-icons-react';
-import {FooterCentered} from "../Footer";
+import {FooterCentered} from "../footer/footer";
 import Link from "next/link";
 
 const HEADER_HEIGHT = 60;
@@ -147,7 +147,7 @@ export function Layout({children}) {
           color: "white"
         })}
       >
-        Get 60 days free now
+        We care first 2 months free no credit card
       </Box>
       <Header height={HEADER_HEIGHT}   sx={{ borderBottom: 0, position: "sticky", boxShadow: "rgb(0 0 0 / 7%) 0px 5px 10px" }} mb={120}>
         <Container className={classes.inner} fluid>
@@ -164,7 +164,7 @@ export function Layout({children}) {
           <Group spacing={5} className={classes.links}>
             {items}
           </Group>
-          <Link href={"/login"}>
+          <Link href={"/auth/login"}>
             <Button radius="xl">
               Try for Free
             </Button>

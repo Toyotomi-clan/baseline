@@ -54,10 +54,13 @@
     "@mantine/hooks": "^4.2.12",
     "@mantine/next": "^4.2.12",
     "@nrwl/next": "14.4.2",
+    "@ory/client": "^0.0.1-alpha.189",
+    "@types/axios": "^0.14.0",
     "core-js": "^3.6.5",
     "next": "12.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-query": "^3.39.1",
     "regenerator-runtime": "0.13.7",
     "tabler-icons-react": "^1.52.0",
     "tslib": "^2.3.0"

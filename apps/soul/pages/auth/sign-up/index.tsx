@@ -45,7 +45,7 @@ export function SignUp(props: SignupProps) {
               </ThemeIcon>
             }
           >
-            Invite a friend to share progress with
+            We are stronger together invite a friend
           </List.Item>
         </List>
       </Box>
@@ -59,7 +59,7 @@ export function SignUp(props: SignupProps) {
       </Title>
       <Text color="dimmed" size="sm" align="center" mt={5}>
         already a user?{' '}
-        <Link href={"/login"}>
+        <Link href={"/auth/login"}>
           login
         </Link>
       </Text>

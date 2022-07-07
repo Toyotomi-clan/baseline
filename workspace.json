@@ -2,9 +2,6 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "soul": "apps/soul",
-    "soul-e2e": "apps/soul-e2e",
-    "spirit": "apps/spirit",
-    "spirit-swagger": "libs/generated/spirit-swagger"
+    "soul": "apps/soul"
   }
 }

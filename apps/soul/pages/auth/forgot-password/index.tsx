@@ -54,7 +54,7 @@ const useStyles = createStyles((theme) => ({
           <Anchor color="dimmed" size="sm" className={classes.control}>
             <Center inline>
               <ArrowLeft size={12} />
-              <Link href={"/login"}>
+              <Link href={"/auth/login"}>
                 <Box ml={5}>Back to login page</Box>
               </Link>
             </Center>

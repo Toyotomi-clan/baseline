@@ -14,6 +14,8 @@ import {
 } from "@mantine/core";
 import React from "react";
 import Link from "next/link";
+import {SkeletonLogin} from "../../../Components/skeletons/auth/login/skeleton-login";
+import {useStartLoginFlow} from "./loginApi";
 
 export interface LoginProps {}
 
@@ -50,8 +52,17 @@ export function GoogleIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   );
 }
 export function Login(props: LoginProps) {
+  const {data, isLoading} = useStartLoginFlow();
+
+  //loading
+  if(isLoading){
+    return <SkeletonLogin/>
+  }
+
   return (
+
         <Container size={420} my={40}>
+          <h1>{data.data.id}</h1>
           <Title
             align="center"
             sx={(theme) => ({ fontFamily: `Greycliff CF, ${theme.fontFamily}`, fontWeight: 900 })}
@@ -60,7 +71,7 @@ export function Login(props: LoginProps) {
           </Title>
           <Text color="dimmed" size="sm" align="center" mt={5}>
             Do not have an account yet?{' '}
-            <Link href="/sign-up">
+            <Link href="/auth/sign-up">
               Sign up for free
             </Link>
           </Text>
@@ -70,7 +81,7 @@ export function Login(props: LoginProps) {
             <PasswordInput label="Password" placeholder="Your password" required mt="md" />
             <Group position="apart" mt="md">
               <Checkbox label="Remember me" />
-              <Link href={"/forgot-password"}>
+              <Link href={"/auth/forgot-password"}>
                 Forgot password?
               </Link>
             </Group>
@@ -86,7 +97,6 @@ export function Login(props: LoginProps) {
 
           </Paper>
         </Container>
-
   );
 }
 
