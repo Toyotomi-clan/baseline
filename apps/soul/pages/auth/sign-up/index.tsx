@@ -13,10 +13,11 @@ import {
   Title
 } from "@mantine/core";
 import React from "react";
-import {GoogleIcon} from "../login";
 import {CircleCheck, CircleDashed} from "tabler-icons-react";
 import Link from "next/link";
+import {GoogleIcon} from "../../../Components/SocialAuthIcons/googleIcon";
 
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface SignupProps {}
 
 export function SignUp(props: SignupProps) {

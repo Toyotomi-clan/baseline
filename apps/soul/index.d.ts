@@ -4,3 +4,4 @@ declare module '*.svg' {
   export const ReactComponent: any;
   export default content;
 }
+export {GoogleIcon} from "./Components/SocialAuthIcons/googleIcon";

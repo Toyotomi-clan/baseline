@@ -23,6 +23,8 @@ export const queryClient = new QueryClient({
 export default function App(props: AppProps) {
   const { Component, pageProps } = props;
 
+  //Todo: Add error boundary
+  //Todo: Capture error and enable user to retry
   return (
     <>
       <Head>
